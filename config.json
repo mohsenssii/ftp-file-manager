@@ -1,0 +1,34 @@
+{
+  "ftp": {
+    "host": "ftp.example.com",
+    "port": 21,
+    "username": "demo_user",
+    "password": "CHANGE_ME",
+    "protocol": "Ftp",
+    "remoteRoot": "/",
+    "passive": true,
+    "timeoutSeconds": 60
+  },
+  "renames": [
+    {
+      "remote_file_address": "httpdocs/old-app.dll",
+      "remote_new_file_name": "old-app.dll.bak"
+    }
+  ],
+  "removes": [
+    {
+      "remote_file_address": "httpdocs/obsolete.txt"
+    }
+  ],
+  "uploads": [
+    {
+      "local_file_address": [
+        "C:/deploy/myapp/myapp.dll"
+      ],
+      "local_folder_address": [
+        "C:/deploy/myapp/assets"
+      ],
+      "remote_folder": "httpdocs"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+# WinSCP binaries are downloaded on demand, do not commit them
+winscp.exe
+WinSCPnet.dll
+netstandard2.0/
+# Logs
+*.log
+ftp-session-*.log
+conn-test.log
+run.log
+# OS / editor junk
+Thumbs.db
+Desktop.ini
+.vs/
+.vscode/
+*.user
+# Local overrides with real credentials (keep only example files in git)
+# Uncomment the next line if you use a private config.json locally:
+# config.json
